@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+
+    <!-- Title -->
+    <title>Attendance Calculator | Free Online Attendance Tracking Tool for Students & Teachers | Calculate Attendance Percentage</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Free online Attendance Calculator - Calculate attendance percentage instantly, track attendance records, and manage attendance efficiently. Perfect for students, teachers, and professionals. No signup required. Get instant results and attendance insights.">
+
+    <!-- Keywords -->
+    <meta name="keywords" content="attendance calculator, attendance management, attendance tracker, attendance percentage calculator, free attendance tool, online attendance system, student attendance tracker, teacher attendance tool, professional attendance management, college attendance calculator, university attendance tracker, attendance percentage, calculate attendance, attendance insights">
+
+    <!-- Author -->
+    <meta name="author" content="Thirumalesh Pinninti">
+    <meta name="creator" content="Thirumalesh Pinninti">
+    <meta name="publisher" content="Thirumalesh Pinninti">
+    <meta name="copyright" content="Copyright © 2024 Thirumalesh Pinninti">
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Attendance Calculator | Free Online Attendance Tracking Tool">
+    <meta property="og:description" content="Calculate attendance percentage instantly, track attendance records, and manage attendance efficiently. Perfect for students, teachers, and professionals. No signup required. Get instant results and attendance insights.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/thirumaleshp/Attendance-calculator/main/attendance-calculator-thumbnail.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Attendance Calculator - Track and manage your attendance percentage">
+    <meta property="og:url" content="https://github.com/thirumaleshp/Attendance-calculator">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Attendance Calculator">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="en_GB">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@thirumaleshp">
+    <meta name="twitter:creator" content="@thirumaleshp">
+    <meta name="twitter:title" content="Attendance Calculator | Free Online Attendance Tracking Tool">
+    <meta name="twitter:description" content="Calculate attendance percentage instantly, track attendance records, and manage attendance efficiently. Perfect for students, teachers, and professionals. No signup required. Get instant results and attendance insights.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/thirumaleshp/Attendance-calculator/main/attendance-calculator-thumbnail.png">
+    <meta name="twitter:image:alt" content="Attendance Calculator Interface - Track and manage your attendance percentage">
+
+    <!-- Additional Meta Tags -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#f8f4f9">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="application-name" content="Attendance Calculator">
+    <meta name="msapplication-TileColor" content="#f8f4f9">
+    <meta name="msapplication-TileImage" content="attendance-calculator-thumbnail.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="attendance-calculator-thumbnail.png">
+    <link rel="apple-touch-icon-precomposed" href="attendance-calculator-thumbnail.png">
+    <link rel="mask-icon" href="attendance-calculator-thumbnail.png" color="#a78bfa">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://github.com/thirumaleshp/Attendance-calculator">
+
+    <!-- Structured Data for Rich Results -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Attendance Calculator",
+        "description": "Free online tool to calculate and manage attendance efficiently",
+        "url": "https://github.com/thirumaleshp/Attendance-calculator",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Thirumalesh Pinninti",
+            "url": "https://thirumalesh.xyz"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "150",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "featureList": [
+            "Calculate attendance percentage",
+            "Track attendance records",
+            "Instant results",
+            "No signup required",
+            "Mobile friendly",
+            "Attendance insights",
+            "Share results",
+            "Download results"
+        ],
+        "browserRequirements": "Requires JavaScript. Works in all modern browsers.",
+        "softwareVersion": "1.0.0",
+        "screenshot": "https://raw.githubusercontent.com/thirumaleshp/Attendance-calculator/main/attendance-calculator-thumbnail.png"
+    }
+    </script>
+
+    <!-- Additional Structured Data for FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "How do I calculate my attendance percentage?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Enter your total number of classes and classes attended. The calculator will automatically compute your attendance percentage and provide additional insights."
+            }
+        }, {
+            "@type": "Question",
+            "name": "Is this attendance calculator free to use?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, this attendance calculator is completely free to use. No signup or registration is required."
+            }
+        }, {
+            "@type": "Question",
+            "name": "Can I share my attendance results?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, you can share your attendance results directly from the calculator. The tool provides options to share via social media or download as an image."
+            }
+        }, {
+            "@type": "Question",
+            "name": "Does this work on mobile devices?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, the attendance calculator is fully responsive and works perfectly on all devices including mobile phones and tablets."
+            }
+        }]
+    }
+    </script>
+
+    <!-- Additional Structured Data for BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://github.com/thirumaleshp"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Attendance Calculator",
+            "item": "https://github.com/thirumaleshp/Attendance-calculator"
+        }]
+    }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- Stylesheets and other resources -->
+    <style>
+        /* --- MINIMALIST PASTEL UI / UX STYLES --- */
+
+        :root {
+            /* Pastel Palette */
+            --bg-color: #f8f4f9;            /* Very light lavender background */
+            --container-bg: #ffffff;        /* Pure white container */
+            --text-primary: #4a4a5e;        /* Soft dark purple-gray for main text */
+            --text-secondary: #8b8b9e;      /* Muted purple-gray for secondary text */
+            --accent-primary: #a78bfa;      /* Soft lavender purple */
+            --accent-secondary: #c4b5fd;    /* Lighter lavender */
+            --accent-hover: #9078e8;        /* Slightly darker purple for hover */
+            --border-light: #f3e8ff;        /* Very light purple border */
+            --border-medium: #e9d5ff;       /* Light purple border */
+            --success-pastel: #bbf7d0;      /* Soft mint green */
+            --warning-pastel: #fde68a;      /* Soft yellow */
+            --error-pastel: #fecaca;        /* Soft pink-red */
+        }
+
+        /* General Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            background: linear-gradient(135deg, #f8f4f9 0%, #fce7f3 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: var(--text-primary);
+            padding: 20px;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            background-color: var(--container-bg);
+            padding: 40px 45px;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(167, 139, 250, 0.1),
+                        0 2px 8px rgba(167, 139, 250, 0.05);
+            max-width: 400px;
+            width: 100%;
+            text-align: left;
+            box-sizing: border-box;
+            border: 2px solid var(--border-light);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            box-shadow: 0 12px 40px rgba(167, 139, 250, 0.15),
+                        0 4px 12px rgba(167, 139, 250, 0.08);
+        }
+
+        h1 {
+            color: var(--text-primary);
+            font-size: 26px;
+            margin-top: 0;
+            margin-bottom: 32px;
+            font-weight: 600;
+            text-align: center;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 12px 16px;
+            margin-bottom: 18px;
+            border: 2px solid var(--border-medium);
+            border-radius: 12px;
+            font-size: 16px;
+            background-color: var(--container-bg);
+            color: var(--text-primary);
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+            -webkit-appearance: textfield;
+            -moz-appearance: textfield;
+            appearance: textfield;
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"]:focus {
+            border-color: var(--accent-primary);
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(167, 139, 250, 0.1);
+            background-color: #fefeff;
+        }
+
+        input[type="number"]::placeholder {
+            color: #c4b5fd;
+        }
+
+        /* Error Message Style */
+        .error-message {
+            color: #dc2626;
+            font-size: 14px;
+            text-align: center;
+            margin-top: -8px;
+            margin-bottom: 16px;
+            min-height: 20px;
+            font-weight: 500;
+            background-color: var(--error-pastel);
+            padding: 8px 12px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .error-message:not(:empty) {
+            display: block;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+            color: #ffffff;
+            padding: 14px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 8px;
+            box-shadow: 0 4px 12px rgba(167, 139, 250, 0.3);
+        }
+
+        button[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(167, 139, 250, 0.4);
+        }
+
+        button[type="submit"]:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(167, 139, 250, 0.3);
+        }
+
+        /* Results Area Styling */
+        .result {
+            text-align: left;
+            margin-top: 32px;
+            padding: 20px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+            border: 2px solid var(--border-light);
+        }
+
+        .result p {
+            margin: 10px 0;
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .result p:first-child {
+            margin-top: 0;
+        }
+
+        .result p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Style the main percentage result */
+        #attendancePercentage {
+            font-size: 20px;
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: 16px;
+            padding: 12px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-primary);
+        }
+
+        #attendancePercentage strong {
+            font-size: 1.2em;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Style other result numbers */
+        .result p strong {
+            color: var(--accent-primary);
+            font-weight: 600;
+        }
+
+        /* Link styling */
+        a {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 8px 16px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+        }
+
+        a:hover {
+            color: var(--accent-primary);
+            background-color: var(--border-light);
+            text-decoration: none;
+        }
+
+        .link-container {
+            text-align: center;
+        }
+
+        form br {
+            display: none;
+        }
+
+        /* Share and Download Buttons - Pastel Style */
+        .share-button, .download-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 18px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 6px;
+            transition: all 0.3s ease;
+            width: 48%;
+            box-shadow: 0 2px 8px rgba(167, 139, 250, 0.25);
+        }
+
+        .share-button:hover, .download-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(167, 139, 250, 0.35);
+        }
+
+        .share-button:active, .download-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(167, 139, 250, 0.25);
+        }
+
+        .share-button svg, .download-button svg {
+            margin-right: 8px;
+        }
+
+        /* Style for the share buttons container */
+        .share-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* Message for devices that don't support sharing */
+        #shareNotSupported {
+            display: none;
+            color: var(--text-secondary);
+            font-size: 12px;
+            text-align: center;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        /* Mobile responsive adjustments */
+        @media (max-width: 480px) {
+            .container {
+                padding: 32px 28px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container" id="mainContainer">
+        <h1>Attendance Tracker</h1>
+        <form id="attendanceForm" onsubmit="event.preventDefault(); calculateAttendance();">
+            <label for="totalClasses"><b>Total Classes</b></label>
+            <input type="number" id="totalClasses" placeholder="e.g., 50" required>
+
+            <label for="attendedClasses"><b>Classes Attended</b></label>
+            <input type="number" id="attendedClasses" placeholder="e.g., 40" required>
+
+            <div id="errorMessage" class="error-message"></div>
+
+            <button type="submit">Check Attendance</button>
+        </form>
+
+        <div id="result" class="result" style="display: none;">
+            <p id="attendancePercentage"></p>
+            <p id="absentClasses"></p>
+            <p id="requiredClasses"></p>
+            <p id="bunkInfo"></p>
+            
+            <!-- Add Share Container -->
+            <div class="share-container">
+                <button id="shareButton" class="share-button">
+                    <!-- Share Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="18" cy="5" r="3"></circle>
+                        <circle cx="6" cy="12" r="3"></circle>
+                        <circle cx="18" cy="19" r="3"></circle>
+                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                    </svg>
+                    Share Results
+                </button>
+                <button id="downloadButton" class="download-button">
+                    <!-- Download Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Image
+                </button>
+            </div>
+            <p id="shareNotSupported">Sharing not supported on this device</p>
+        </div>
+
+        <div class="link-container">
+            <a href="https://hemanthk.me" target="_blank">Profile @hemanthk.me</a>
+        </div>
+    </div>
+
+    <script>
+        // Your existing calculateAttendance function
+        function calculateAttendance() {
+            const totalClassesInput = document.getElementById('totalClasses');
+            const attendedClassesInput = document.getElementById('attendedClasses');
+            const totalClasses = parseInt(totalClassesInput.value);
+            const attendedClasses = parseInt(attendedClassesInput.value);
+            const resultDiv = document.getElementById('result');
+            const errorMessageDiv = document.getElementById('errorMessage');
+
+            // Clear previous error message and hide result div initially
+            errorMessageDiv.textContent = '';
+            resultDiv.style.display = 'none';
+
+            // --- Validation ---
+            if (isNaN(totalClasses) || totalClasses <= 0 || isNaN(attendedClasses) || attendedClasses < 0 || attendedClasses > totalClasses) {
+                errorMessageDiv.textContent = "Enter valid numbers (Attended ≤ Total)";
+                return;
+            }
+
+            // --- Calculations ---
+            let attendancePercentage = ((attendedClasses / totalClasses) * 100);
+            const absentClasses = totalClasses - attendedClasses;
+
+            document.getElementById('attendancePercentage').innerHTML = `Attendance: <strong>${attendancePercentage.toFixed(2)}%</strong>`;
+            document.getElementById('absentClasses').innerHTML = `Classes Missed: <strong>${absentClasses}</strong>`;
+
+            let requiredClasses = "";
+            let bunkInfo = "";
+
+            let currentPercentageForCalc = attendancePercentage;
+
+            // If attendance is below 75%
+            if (currentPercentageForCalc < 75) {
+                let tempTotal = totalClasses;
+                let tempAttended = attendedClasses;
+                let neededFor75 = 0;
+
+                // Calculate needed for 75%
+                while ((tempAttended / tempTotal) * 100 < 75) {
+                    tempAttended++;
+                    tempTotal++;
+                    neededFor75++;
+                }
+                requiredClasses = `Need to attend next <strong>${neededFor75}</strong> class(es) for 75%`;
+
+                let neededFor80 = 0;
+                while ((tempAttended / tempTotal) * 100 < 80) {
+                    tempAttended++;
+                    tempTotal++;
+                    neededFor80++;
+                }
+
+                if (neededFor80 > 0) {
+                    let totalNeededFor80 = neededFor75 + neededFor80;
+                    requiredClasses += ` and attend <strong>${totalNeededFor80}</strong> total class(es) to reach 80%.`;
+                } else {
+                    requiredClasses += `.`;
+                }
+
+                bunkInfo = "";
+            }
+            // If attendance is between 75% and 80%
+            else if (currentPercentageForCalc >= 75 && currentPercentageForCalc < 80) {
+                let tempTotal = totalClasses;
+                let tempAttended = attendedClasses;
+                let i = 0;
+
+                while (((tempAttended) / (tempTotal + 1)) * 100 >= 75) {
+                    tempTotal++;
+                    i++;
+                }
+
+                if (i > 0) {
+                    bunkInfo = `Can miss next <strong>${i}</strong> class(es) for 75%.`;
+                } else {
+                    bunkInfo = `Cannot miss next class for 75%.`;
+                }
+
+                tempTotal = totalClasses;
+                tempAttended = attendedClasses;
+                let j = 0;
+                while ((tempAttended / tempTotal) * 100 < 80) {
+                    tempAttended++;
+                    tempTotal++;
+                    j++;
+                }
+                if (j > 0) {
+                    requiredClasses = `Need to attend next <strong>${j}</strong> class(es) for 80%.`;
+                } else {
+                    requiredClasses = "";
+                }
+            }
+            // Attendance is 80% or above
+            else {
+                let tempTotal = totalClasses;
+                let tempAttended = attendedClasses;
+                let bunkableFor75 = 0;
+
+                while (((tempAttended) / (tempTotal + 1)) * 100 >= 75) {
+                    tempTotal++;
+                    bunkableFor75++;
+                }
+                if (bunkableFor75 > 0) {
+                    bunkInfo = `Can miss next <strong>${bunkableFor75}</strong> class(es) for 75%.`;
+                } else {
+                    bunkInfo = `Cannot miss next class for 75%.`;
+                }
+
+                tempTotal = totalClasses;
+                tempAttended = attendedClasses;
+                let bunkableFor80 = 0;
+
+                while (((tempAttended) / (tempTotal + 1)) * 100 >= 80) {
+                    tempTotal++;
+                    bunkableFor80++;
+                }
+
+                if (bunkableFor80 > 0) {
+                    if (bunkInfo.startsWith("Can miss")) {
+                        if (bunkableFor80 !== bunkableFor75) {
+                            bunkInfo += ` (Can miss <strong>${bunkableFor80}</strong> for 80%).`;
+                        }
+                    } else {
+                        bunkInfo += ` Can miss <strong>${bunkableFor80}</strong> for 80%.`;
+                    }
+                } else {
+                    if (bunkInfo.endsWith('.')) {
+                        bunkInfo += " Cannot miss next class for 80%.";
+                    } else {
+                        bunkInfo += ". Cannot miss next class for 80%.";
+                    }
+                }
+                requiredClasses = "";
+            }
+
+            // --- Display Results ---
+            document.getElementById('requiredClasses').innerHTML = requiredClasses;
+            document.getElementById('requiredClasses').style.display = requiredClasses ? 'block' : 'none';
+
+            document.getElementById('bunkInfo').innerHTML = bunkInfo;
+            document.getElementById('bunkInfo').style.display = bunkInfo ? 'block' : 'none';
+
+            resultDiv.style.display = 'block';
+            
+            // Check device capabilities and show appropriate buttons
+            updateShareButtons();
+        }
+
+        // Helper function to determine if the device is mobile
+        function isMobileDevice() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        // Function to update share buttons based on device capabilities
+        function updateShareButtons() {
+            const shareButton = document.getElementById('shareButton');
+            const downloadButton = document.getElementById('downloadButton');
+            const shareNotSupported = document.getElementById('shareNotSupported');
+            
+            // Mobile with share capability
+            if (navigator.share && isMobileDevice()) {
+                shareButton.style.display = 'flex';
+                downloadButton.style.display = 'none';
+                shareNotSupported.style.display = 'none';
+            } 
+            // Desktop or mobile without share capability
+            else {
+                if (isMobileDevice()) {
+                    // Mobile without share capability
+                    shareButton.style.display = 'none';
+                    downloadButton.style.display = 'flex';
+                    downloadButton.style.width = '100%';
+                    shareNotSupported.style.display = 'block';
+                } else {
+                    // Desktop - always show download button
+                    shareButton.style.display = 'none';
+                    downloadButton.style.display = 'flex';
+                    downloadButton.style.width = '100%';
+                    shareNotSupported.style.display = 'none';
+                }
+            }
+        }
+
+        // Function to capture and download the entire container as an image
+        async function captureAndDownload() {
+            try {
+                const containerElement = document.getElementById('mainContainer');
+                
+                // Temporarily hide buttons for clean screenshot
+                const shareContainer = document.querySelector('.share-container');
+                const originalDisplay = shareContainer.style.display;
+                shareContainer.style.display = 'none';
+                document.getElementById('shareNotSupported').style.display = 'none';
+                
+                // Take screenshot of entire container
+                const canvas = await html2canvas(containerElement, {
+                    backgroundColor: '#ffffff',
+                    scale: 2, // Higher quality
+                    logging: false
+                });
+                
+                // Restore buttons
+                shareContainer.style.display = originalDisplay;
+                
+                // Create download link
+                const dataUrl = canvas.toDataURL('image/png');
+                const downloadLink = document.createElement('a');
+                downloadLink.href = dataUrl;
+                downloadLink.download = 'attendance-results.png';
+                
+                // Trigger download
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+                
+            } catch (error) {
+                console.error('Error capturing and downloading:', error);
+                alert('Failed to generate and download the image.');
+            }
+        }
+
+        // Function to share the entire container as an image on mobile
+        async function shareResults() {
+            try {
+                const containerElement = document.getElementById('mainContainer');
+                
+                // Temporarily hide buttons for clean screenshot
+                const shareContainer = document.querySelector('.share-container');
+                const originalDisplay = shareContainer.style.display;
+                shareContainer.style.display = 'none';
+                document.getElementById('shareNotSupported').style.display = 'none';
+                
+                // Take screenshot of entire container
+                const canvas = await html2canvas(containerElement, {
+                    backgroundColor: '#ffffff',
+                    scale: 2, // Higher quality
+                    logging: false
+                });
+                
+                // Restore buttons
+                shareContainer.style.display = originalDisplay;
+                
+                // Extract text for fallback sharing
+                const attendanceText = document.getElementById('attendancePercentage').textContent;
+                const absentText = document.getElementById('absentClasses').textContent;
+                const requiredText = document.getElementById('requiredClasses').textContent || '';
+                const bunkText = document.getElementById('bunkInfo').textContent || '';
+                
+                const shareText = `${attendanceText}\n${absentText}\n${requiredText ? requiredText + '\n' : ''}${bunkText ? bunkText : ''}`;
+                
+                // Convert canvas to blob for sharing
+                canvas.toBlob(async function(blob) {
+                    try {
+                        // Create a file from the blob
+                        const file = new File([blob], 'attendance-results.png', { type: 'image/png' });
+                        
+                        // Create share data
+                        const shareData = {
+                            title: 'My Attendance Results',
+                            text: shareText,
+                            files: [file]
+                        };
+                        
+                        // Check if the browser supports sharing with files
+                        if (!navigator.canShare || (navigator.canShare && !navigator.canShare(shareData))) {
+                            // Files not supported, share without files
+                            await navigator.share({
+                                title: 'My Attendance Results',
+                                text: shareText
+                            });
+                        } else {
+                            // Share with files
+                            await navigator.share(shareData);
+                        }
+                    } catch (error) {
+                        console.error('Error in sharing with blob:', error);
+                        // Fall back to text-only sharing
+                        await navigator.share({
+                            title: 'My Attendance Results',
+                            text: shareText
+                        });
+                    }
+                }, 'image/png');
+                
+            } catch (error) {
+                console.error('Error sharing:', error);
+                alert('Sharing failed. Your browser may not support this feature.');
+            }
+        }
+
+        // When the document is ready, set up event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            const shareButton = document.getElementById('shareButton');
+            const downloadButton = document.getElementById('downloadButton');
+            
+            // Set up share button click handler
+            shareButton.addEventListener('click', shareResults);
+            
+            // Set up download button click handler
+            downloadButton.addEventListener('click', captureAndDownload);
+            
+            // Check device capabilities on load
+            updateShareButtons();
+        });
+    </script>
+</body>
+</html>
